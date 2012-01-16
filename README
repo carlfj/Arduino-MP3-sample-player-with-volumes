@@ -10,7 +10,7 @@ It's set up to use the trigger inputs on the MP3 Trigger to keep digital pins fr
 
 Code for reading rotary encoder is embedded in sketch instead of using another library. Remember to add to 10nF capacitors between ground and each input to avoid bouncing, as there is not added any software debouncing.
 The rotary encoder changes the volume of the last played sample with a set lower limit and stores it in EEPROM.
-
+It is set up to be connected to pin 8 and 9 with #define, but can be changed. Just remember to update ENC_PORT to reflect the section of pins in use.
 
 Sparkfun product page, link to User Guidewhich they call
 Datasheet for some reason: 

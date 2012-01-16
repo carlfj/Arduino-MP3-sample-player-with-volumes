@@ -162,7 +162,11 @@ int readVolumeEncoder() {
 /* Rotary encoder routines. Exists as a library, included directly below for easier code portatbility */
 #define ENC_A 9
 #define ENC_B 8
-#define ENC_PORT PINB
+//#define ENC_PORT PIND // Use for digital pins 0-7
+#define ENC_PORT PINB // Use for digital pins 8-13
+//#define ENC_PORT PINC // Use for Analog pins
+
+
 
 void setupEncoder() {
   pinMode(ENC_A, INPUT);
