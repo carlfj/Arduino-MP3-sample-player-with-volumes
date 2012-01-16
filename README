@@ -1,0 +1,20 @@
+MP3Trigduino by Carl Jensen
+dimsos.fridata.dk
+
+
+This sketch requires Arduino 1.0 since it is using SoftwareSerial.
+It also requires the updated version of MP3Trigger, currently forked on github at
+https://github.com/carlfj/MP3Trigger-for-Arduino
+
+It's set up to use the trigger inputs on the MP3 Trigger to keep digital pins free.
+
+Code for reading rotary encoder is embedded in sketch instead of using another library. Remember to add to 10nF capacitors between ground and each input to avoid bouncing, as there is not added any software debouncing.
+The rotary encoder changes the volume of the last played sample with a set lower limit and stores it in EEPROM.
+
+
+Sparkfun product page, link to User Guidewhich they call
+Datasheet for some reason: 
+http://www.sparkfun.com/products/9715
+
+Updates on new firmware for MP3 Trigger V2 at:
+http://makerjam.com/support/
